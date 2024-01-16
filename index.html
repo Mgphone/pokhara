@@ -3,62 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coming Soon</title>
-    <style>
-      body {
-        text-align: center;
-        padding: 50px;
-        font-family: Arial, sans-serif;
-      }
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
-      h1 {
-        color: #ff6347; /* Tomato color */
-      }
-
-      p {
-        color: #555;
-      }
-    </style>
+    <title>Pokhara Coming Soon</title>
   </head>
   <body>
-    <h1>Exciting News!</h1>
-    <p>
-      We're cooking up something special for you. Our website is getting a
-      makeover to serve you better. Stay tuned for delicious updates! 🍽️🎉
-      #<!DOCTYPE html>
-      <html lang="en">
-        <head>
-          <meta charset="UTF-8" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-          <title>Coming Soon</title>
-          <style>
-            body {
-              text-align: center;
-              padding: 50px;
-              font-family: Arial, sans-serif;
-            }
+    <div class="restaurant">
+      <h1>Exciting News!</h1>
+      <p>
+        We're cooking up something special for you. Our website is getting a
+        makeover to serve you better. Stay tuned for delicious updates! 🍽️🎉
+        #NewFlavorsComingSoon
+      </p>
+      <div class="waiting">
+        <h3>Tired of waiting??</h3>
+        <a href="#container">🙏Can play game🙏</a>
+      </div>
+    </div>
 
-            h1 {
-              color: #ff6347; /* Tomato color */
-            }
+    <div class="container" id="container">
+      <div class="check_winner text-primary text-center">
+        <h3 id="check_winner">🫵Hey You!! Black Jack Winner??🫵</h3>
+        <h2></h2>
+      </div>
+      <div class="dealer_header sub-header">
+        <h1>Dealer</h1>
+        <h2 id="dealer_header" class="text-danger"></h2>
+      </div>
 
-            p {
-              color: #555;
-            }
-          </style>
-        </head>
-        <body>
-          <h1>Exciting News!</h1>
-          <p>
-            We're cooking up something special for you. Our website is getting a
-            makeover to serve you better. Stay tuned for delicious updates! 🍽️🎉
-            #NewFlavorsPokhaRaRestaurantComingSoon
-          </p>
-        </body>
-      </html>
-    </p>
+      <div class="cards_area">
+        <div class="dealer">
+          <img class="card1" id="dcard1" src="img/back.png" alt="back image" />
+          <img class="card2" id="dcard2" src="img/back.png" alt="back image" />
+          <img class="card3" id="dcard3" />
+          <img class="card4" id="dcard4" />
+          <img class="card5" id="dcard5" />
+        </div>
+        <!-- <hr /> -->
+        <div class="player_header sub-header">
+          <h1>Player</h1>
+          <h2 id="player_header" class="text-danger"></h2>
+        </div>
+        <div class="player" id="player">
+          <img class="card1" id="pcard1" src="./img/back.png" alt="foto" />
+          <img class="card2" id="pcard2" src="./img/back.png" alt="foto" />
+          <img class="card3" id="pcard3" />
+          <img class="card4" id="pcard4" />
+          <img class="card5" id="pcard5" />
+        </div>
+      </div>
+      <div class="game_buttons">
+        <button class="btn-info" id="start">New Game</button>
+        <button class="btn-info" id="stay" style="display: none">Stay</button>
+        <button class="btn-info" id="hit" style="display: none">Hit</button>
+      </div>
+    </div>
   </body>
+  <script src="blackjack.js"></script>
 </html>
