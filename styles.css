@@ -31,14 +31,18 @@ body {
 
 /* Style the container */
 .container {
-  margin: auto;
-  height: 100vh;
+/* width:100vw; */
+width: 100%;
+  margin: 2vh auto;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(55deg, red, green, blue);
   color: white;
+  
+
 }
 
 /* Style the header and sub-header */
@@ -68,7 +72,7 @@ h1, h2 {
 /* Style individual cards */
 .card1, .card2, .card3, .card4, .card5 {
   width: 10%;
-  max-width: 150px; /* Limit card width */
+  max-width: 120px; /* Limit card width */
   border: 1px solid black;
   margin: auto;
 }
@@ -78,7 +82,7 @@ h1, h2 {
   display: flex;
   justify-content: center;
   gap: 5vw;
-  margin-top: 2rem;
+  margin: 2rem;
 }
 
 /* Style the "New Game" button */
